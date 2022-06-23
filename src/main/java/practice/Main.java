@@ -1,3 +1,7 @@
+package practice;
+
+import practice.EmailList;
+
 import java.util.Scanner;
 
 public class Main {
@@ -19,6 +23,7 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        EmailList emailList = new EmailList();
         
         while (true) {
             String input = scanner.nextLine();
@@ -27,7 +32,16 @@ public class Main {
             }
             
             //TODO: write code here
-            
+            if (input.contains("ADD")) {
+                int start = input.indexOf("ADD");
+                int spase = input.indexOf(' ', start);
+                String email = input.substring(spase);
+                emailList.add(email);
+                continue;
+            }
+            if (input.contains("LIST")) {
+                emailList.getSortedEmails();
+            }
         }
     }
 }
