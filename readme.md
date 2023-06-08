@@ -1,32 +1,7 @@
-# Работа с проектом в IntelliJ IDEA
+# EmailList
 
-## Запуск тестов локально
+A program that stores a list of email addresses. Addresses can be added via the console with the ADD command and the entire list can be printed with the LIST command.
 
-Запуск на вашем компьютере перед отправкой в репозиторий
+The program checks the correctness of the entered email and prints an error message if necessary.
 
-### Используя интерфейс
-
-- Вызовите контекстное меню папки `test/java`
-правой клавишей мыши.
-- Выберите пункт `Run 'All Tests'`
-
-![Запуск тестов](https://i.imgur.com/30te74l.png)
-
-### Используя горячие клавиши
-
-Запуск всех тестов `Ctrl+Shift+F10` / `⌃⇧R`
-
-*Также вы можете запустить дебаг для анализа и поиска причины*
-
-## Запуск проверки codestyle
-
-- Запустите плагин checkstyle:
-
-### Используя интерфейс
-
-![Запуск проверки стиля кода](https://i.imgur.com/jxgn4In.png)
-
-В результате получите отчет. Если ошибки будут найдены, посмотреть их список и описание
-сможете в разделе
-
-![](https://i.imgur.com/vyl2YnF.png)
+![](src/main/resources/image.png)
